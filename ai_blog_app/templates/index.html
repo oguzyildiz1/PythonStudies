@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI BLOG GENERATOR</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav>
+        <h1><a href="./index.html">Ai Blog GENERATOR</a></h1>
+        <ul>
+            <li><a href="./login.html">Welcome Admin</a></li>
+            <li><a href="./all-blogs.html">Saved Blog Posts</a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog generator -->
+    <div class="container">
+        <h2>Welcome to the AI Blog Generator</h2>
+
+        <p>Generate hight-quality blog arcles from YouTube videos using artificial intelligence. Simply enter the link
+            to
+            the YouTube video below and let the AI create the content for you!
+        </p>
+        <label for="videoLink">
+            <h3>Enter Youtube Video Link</h3>
+        </label>
+
+        <form action="#">
+            <!-- input --><!-- button -->
+            <input type="text" id="videoLink" name="videoLink" placeholder="Paste Youtube Link...">
+            <button type="submit">Generate</button>
+        </form>
+
+
+        <h3>Generated Blog Article</h3>
+
+    </div>
+
+    <!-- copyright -->
+    <footer>Designed by Oğuzhan, Thanks to Code with Tomi</footer>
+
+
+</body>
+
+</html>
